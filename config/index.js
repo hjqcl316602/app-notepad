@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit,
  * @Author: your name
  * @Date: 2019-08-24 23:53:57
- * @LastEditTime: 2019-08-25 10:33:23
+ * @LastEditTime: 2019-08-25 11:55:48
  * @LastEditors: Please set LastEditors
  */
 'use strict';
@@ -37,16 +37,16 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true,
-    proxyTable: {
-      '/apis': {
-        target: 'http://127.0.0.1:8888/',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/apis': ''
-        }
-      }
-    }
+    cssSourceMap: true
+    // proxyTable: {
+    //   '/apis': {
+    //     target: 'http://127.0.0.1:8888/',
+    //     changeOrigin: true,
+    //     pathRewrite: {
+    //       '^/apis': ''
+    //     }
+    //   }
+    // }
   },
 
   build: {

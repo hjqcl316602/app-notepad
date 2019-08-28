@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-24 23:55:30
- * @LastEditTime: 2019-08-25 10:34:11
+ * @LastEditTime: 2019-08-28 22:33:31
  * @LastEditors: Please set LastEditors
  */
 import axios from 'axios';
@@ -21,11 +21,11 @@ let instance = axios.create({
   method: 'post',
   baseURL: '',
   headers: {
-    'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'user-type': 'admin'
+    'Access-Control-Allow-Origin': '*'
+    //'Content-Type': 'application/x-www-form-urlencoded',
+    //'user-type': 'admin'
   },
-  withCredentials: true,
+  withCredentials: false,
   responseType: 'json',
   maxContentLength: 2000,
   timeout: 30 * 1000
